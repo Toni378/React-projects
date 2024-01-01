@@ -1,5 +1,4 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
 import { pyramid } from '../mario'
 import { cash } from '../database'
 
