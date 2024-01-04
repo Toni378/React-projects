@@ -21,3 +21,32 @@ body::-webkit-scrollbar-track{
     height: 100vh;
     position: fixed;
 }
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.nav-item {
+    width: 100%;
+}
+.nav-item:last-child{
+    margin-top: auto;
+}
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    text-decoration: none;
+}
+.nav-link svg  {
+    min-width: 2rem;
+    margin: 0 1.5rem;
+}
+.navbar:hover .link_text {
+    display: block;
+}
