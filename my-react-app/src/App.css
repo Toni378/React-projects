@@ -45,3 +45,30 @@
   margin: 10px 15px 10px 15px;
   border: 0.5px black solid;
 }
+.container{
+  margin: 10px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(189, 194, 194);
+  border: 0.5px black solid;
+}
+#about {
+  color: #191c21;
+  background-color: white;
+  border: 2px black solid;
+  margin: 10px 10px ;
+  padding: 10px 10px ;
+  text-align: right;
+  position: absolute;
+  top: 0;
+}
+#email {
+  color: #191c21;
+  background-color: white;
+  border: 2px black solid;
+  margin: 10px 10px ;
+  padding: 10px 10px ;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 0; /* Optional: you can adjust the top position as needed */
+}
