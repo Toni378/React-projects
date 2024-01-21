@@ -1,69 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <link rel="stylesheet" href="/my-react-app/src/nav.css">
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link href="/my-react-app/src/nav.css">
-  <title>React App</title>
-  <script>
-    const themeMap = {
-      dark: "light",
-      light: "solar",
-      solar: "dark"
-    };
-
-    const theme = localStorage.getItem('theme') || (tmp = Object.keys(themeMap)[0], localStorage.setItem('theme', tmp), tmp);
-    const bodyClass = document.body.classList;
-    bodyClass.add(theme);
-
-    function toggleTheme() {
-      const current = localStorage.getItem('theme');
-      const next = themeMap[current];
-
-      bodyClass.replace(current, next);
-      localStorage.setItem('theme', next);
-    }
-
-    document.getElementById('themeButton').onclick = toggleTheme;
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First project</title>
+  <link rel="stylesheet" href="/src/index.css">
 </head>
 <body>
-  <nav class="navbar">
-    <ul class="navbar-nav">
-      <li class="logo">
-        <a href="/my-react-app/src/components/app.jsx" class="nav-link">
-          <span class="link-text logo-text">Atilla Idriz / アティラ</span>
-        </a>
-      </li>
-
-
-      <!-- Add closing tag for the svg element here -->
-      <!-- ... -->
-
-      <li class="nav-item">
-
-        <!-- ... -->
-      </li>
-
-      <li class="nav-item">
-        <!-- ... -->
-      </li>
-
-      <li class="nav-item">
-        <!-- ... -->
-      </li>
-
-      <li class="nav-item">
-        <!-- ... -->
-      </li>
-    </ul>
-  </nav>
+  <input type="text" id="usernum" placeholder="Please enter the height of your pyramid">
+  <hr>
+  <input type="text" id="usernum2" placeholder="Please enter the width of your pyramid">
+  <button id="sub2">Submit</button>
+  <br>
+  <script type="module" src="/src/script.js"></script>
+  
+  <div id="mario"></div>
 </body>
 </html>
 
