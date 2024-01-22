@@ -23,11 +23,11 @@ function printing_pyra() {
         <div>
           <h2>Your pyramid</h2>
           {pyramid().map((line, index) => (
-            <div key={index} dangerouslySetInnerHTML={{ __html: line }}></div>
+            <div key={index} SetInnerHTML={{ __html: line }}></div>
           ))}
         </div>
       );
-    
+  
       document.getElementById('mario').innerHTML = '';
       document.getElementById('mario').appendChild(pyramidElement);
 }
