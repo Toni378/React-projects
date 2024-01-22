@@ -33,6 +33,7 @@ function printing_pyra() {
 }
 
 document.getElementById('sub2').addEventListener('click', () => {
-  printing_pyra();
+  place = document.querySelector('#print');
+  place.innerHTML = printing_pyra();
 });
 
