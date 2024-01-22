@@ -23,7 +23,7 @@ function printing_pyra() {
         <div>
           <h2>Your pyramid</h2>
           {pyramid().map((line, index) => (
-            <div key={index} SetInnerHTML={{ __html: line }}></div>
+            <p key={index} SetInnerHTML={{ __html: line }}></p>
           ))}
         </div>
       );
